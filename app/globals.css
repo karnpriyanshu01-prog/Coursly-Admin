@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: #ffffff;
+  color: #000000;
+}
+
+body {
+  font-family: Inter, -apple-system, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+::selection {
+  background: #d0f4d8;
+}
+
+@layer components {
+  .t-h1 {
+    @apply text-[26px] font-bold leading-8 tracking-[-0.625px] text-ink;
+  }
+  .t-h2 {
+    @apply text-[22px] font-bold leading-7 tracking-[-0.25px] text-ink;
+  }
+  .t-h3 {
+    @apply text-[16px] font-semibold leading-6 text-ink;
+  }
+  .t-caption {
+    @apply text-[12px] font-semibold leading-4 tracking-[0.125px] text-ink-muted;
+  }
+  .t-body {
+    @apply text-[14px] leading-5 text-ink-soft;
+  }
+}
